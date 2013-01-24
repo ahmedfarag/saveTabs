@@ -11,13 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130124184907) do
+ActiveRecord::Schema.define(:version => 20130124223640) do
 
   create_table "links", :force => true do |t|
-    t.string   "url"
+    t.text     "url",        :limit => 255
     t.string   "code"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",                :null => false
+    t.datetime "updated_at",                :null => false
   end
+
+  add_index "links", ["code"], :name => "index_links_on_code", :unique => true
 
 end

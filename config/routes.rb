@@ -1,7 +1,8 @@
 SaveTabs::Application.routes.draw do
-
+  root to: 'static_pages#home'
   resources :links
   match '/success',   to: 'static_pages#success'
+  match '/home',   to: 'static_pages#home'
   # get "links/new"
 
   # The priority is based upon order of creation:

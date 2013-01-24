@@ -1,5 +1,5 @@
 class StaticPagesController < ApplicationController
 	def success
-		@url = "localhost:3000/links/"+ flash[:code]
+		@url = "http://sharetabs.herokuapp.com/links/"+ flash[:code]
 	end
 end

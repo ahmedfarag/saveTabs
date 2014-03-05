@@ -1,7 +1,7 @@
 class LinksController < ApplicationController
   
   def show
-  	@title = "#ShareTabs#;" + Link.find_by_code(params[:id]).url
+  	@title = "#Select-Share#;" + Link.find_by_code(params[:id]).url
 	# @title = Link.find(params[:id]).code
   end
 

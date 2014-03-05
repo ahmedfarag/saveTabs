@@ -1,9 +1,9 @@
 class StaticPagesController < ApplicationController
 
 	def home
-		@title = "ShareTabs | Home"
+		@title = "Select-Share | Home"
 	end
 	def success
-		@url = "http://sharetabs.herokuapp.com/links/"+ flash[:code]
+		@url = "http://select-share.herokuapp.com/links/"+ flash[:code]
 	end
 end
